@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 – Page Not Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: black;
+      color: white;
+      font-family: Lexend, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    
+    }
+
+    a {
+      color: #ff5a5a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: red;
+    }
+
+    .h1{
+      margin: 0%;
+      font-size: 4rem;
+    }
+
+    p{
+      font-size: 1.2rem;
+    }
+
+
+    .bat{
+      filter: invert(100%);
+      width: 50%;
+      margin: 0%;
+      padding-bottom: 0%;
+    }
+
+    .bat:hover{
+     filter: brightness(0) saturate(100%)
+          invert(21%)
+          sepia(100%)
+          saturate(6000%)
+          hue-rotate(0deg);
+    }
+
+    .main-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;       /* space around content */
+      gap: 0.5rem;
+      min-height: 100vh;   /* full screen height */
+      text-align: center;
+      box-sizing: border-box;
+
+      width: 50%;           /* scales with screen width */
+      max-width: 90%;     /* doesn’t get too big on desktop */
+      height: auto;         /* preserves aspect ratio */
+
+}
+    
+  
+@media (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .bat {
+        width: 70%;
+        max-width: 150px;
+      }
+
+      a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    
+    <img class="bat" src="inv.png" title="Oh hey! You found me. That's pretty cool. My name is Asbestos. Bessie for short. Safe travels!">
+    
+    <h1>404</h1>
+    <p>This room doesn’t exist.</p>
+    <p><a href="index.html">Return to Home</a></p>
+  </div>
+</body>
+</html>
